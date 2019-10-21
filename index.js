@@ -1,3 +1,3 @@
-const { printFolder } = require("./file");
+const { printHai } = require("./print");
 
-printFolder();
+printHai();
