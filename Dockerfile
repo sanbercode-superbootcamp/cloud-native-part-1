@@ -4,4 +4,4 @@ WORKDIR /app
 COPY . .
 
 ENTRYPOINT [ "node", "." ]
-CMD [ "guys" ]
+CMD [ "print" ]
