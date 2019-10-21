@@ -1,0 +1,47 @@
+version: '2'
+
+services:
+  hello-1:
+    image: hello:latest
+    command: 
+      - file
+    environment:
+      PORT: 7070
+    ports: 
+      - "9001:7070"
+    volumes: 
+      - hello-fs:/app/folder
+  hello-2:
+    image: hello:latest
+    command: 
+      - file
+    environment:
+      PORT: 7070
+    ports: 
+      - "9002:7070"
+    volumes: 
+      - hello-fs:/app/folder
+  hello-3:
+    image: hello:latest
+    command: 
+      - file
+    environment:
+      PORT: 7070
+    ports: 
+      - "9003:7070"
+    volumes: 
+      - hello-fs:/app/folder
+  hello-4:
+    image: hello:latest
+    command: 
+      - file
+    environment:
+      PORT: 7070
+    ports: 
+      - "9004:7070"
+    volumes: 
+      - hello-fs:/app/folder
+
+volumes:
+  hello-fs:
+    driver: local
